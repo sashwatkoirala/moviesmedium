@@ -7,6 +7,7 @@
 	
 	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery-func.js"></script>
+	<link rel="stylesheet" href="./modal window/modal.css"> 
 </head>
 <body>
 <!-- Shell -->
@@ -398,8 +399,8 @@
 				<!-- end Movie -->
 				
 				<!-- Movie -->
-				<a href="https://youtube.com">
- 				<div class="movie last">
+				 
+ 				<div class="movie last" id="open">
  					<div class="movie-image">
 						<span class="play"><span class="name">KGF Chapter 2</span></span>
 						<img src="css/images/movie18.jpg" alt="movie" />
@@ -413,7 +414,7 @@
 						</div>
 						<span class="comments">12</span>
 					</div>
-				</div></a>
+				</div>
 				<!-- end Movie -->
 				<div class="cl">&nbsp;</div>
 			</div>
@@ -494,5 +495,15 @@
 	<!-- end Footer -->
 </div>
 <!-- end Shell -->
+
+<div id="modal-container" class="modal-container">
+	<div class="modal">
+		<iframe src="https://cloudsucc.succcbots.workers.dev/0:/Bot%20Uploads/KGF%20-%20Chapter%202%20(2022)%20Hindi%201080p%20PROPER%20HDTS%20x264%20-%20ProLover/KGF%20-%20Chapter%202%20(2022)%20Hindi%201080p%20PROPER%20HDTS%20x264%20-%20ProLover.mp4?a=view" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="600px" allowfullscreen></iframe>
+		 <button id="close">
+			 Close me 
+		 </button>
+	</div>
+</div>
+<script src="../modal window/modal.js"></script>
  	</body>
 </html>

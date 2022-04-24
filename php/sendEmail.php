@@ -36,7 +36,7 @@ if($_POST) {
    $from =  $name . " <" . $email . ">";
 
    // Email Headers
-	$headers = "From: localhost\r\n";
+	$headers = "From : localhost\r\n";
 	$headers .= "Reply-To: ". $email . "\r\n";
  	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
@@ -45,7 +45,7 @@ if($_POST) {
    $mail = mail($to, $subject, $message, $headers);
 
 	if ($mail) { echo "OK"; }
-   else { echo "WRONG BRUH."; }
+   else { echo "WRONG ."; }
 
 }
 
