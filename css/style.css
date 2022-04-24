@@ -61,9 +61,7 @@ h1#logo a { float:left; width:239px; height:49px; background:url('images/logo.pn
 #search .search-button { font-size:14px; font-weight:bold; border:0; background:none; color:#fff;   cursor:pointer; }
 
 #main { border-bottom:1px dashed #413e3e; }
-#content {  
-    
-}
+
 
 .box { width:980px; border-bottom:1px dashed #413e3e; padding-bottom:21px; }
 
