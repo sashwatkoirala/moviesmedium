@@ -13,8 +13,8 @@ function url(){
 
 if($_POST) {
 
-   $mail = mail($to, "test","hello","From : localhost");
-   return true;
+   // $mail = mail($to, "test","hello","From : localhost");
+   // return true;
 
    $name = trim(stripslashes($_POST['name']));
    $email = trim(stripslashes($_POST['email']));
