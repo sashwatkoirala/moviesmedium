@@ -1,4 +1,5 @@
 <?php
+session_start();
    $email = $_POST["email"];
    $password = $_POST["password"];
    if ($email == "sashwatkoirala3@gmail.com" AND $password == "sashwat123"){
