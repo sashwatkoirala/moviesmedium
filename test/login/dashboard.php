@@ -19,10 +19,8 @@ if (!isset($_SESSION["logged"])) {
     <h1 style="font-family: 'Shadows Into Light', cursive;">Dashboard</h1>
     <h2 style="font-family: 'Permanent Marker', cursive;">movies list</h2>
     <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "moviedatabase";
+require("db.php");
+
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -37,7 +35,7 @@ if (!isset($_SESSION["logged"])) {
           <label for="movie_name">Movie name</label>
           <input type="movie_name" id="email" name="movie_name" class="form-control md3+" placeholder="Username" aria-label="Movie name"><br>
           <label for="link">link</label>
-          <textarea id="password" class="md-textarea form-control" rows="7" column= "50"></textarea>
+          <textarea id="password" class="md-textarea form-control" rows="7" column= "50" name="link"></textarea>
           <input type="submit" id="submit" value="Submit" class="btn btn-success">
         </form>
     </div>
