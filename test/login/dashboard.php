@@ -11,10 +11,13 @@ if (!isset($_SESSION["logged"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>Dashboard</h1>
-    <h2>movies list</h2>
+    <h1 style="font-family: 'Shadows Into Light', cursive;">Dashboard</h1>
+    <h2 style="font-family: 'Permanent Marker', cursive;">movies list</h2>
     <?php
     $servername = "localhost";
     $username = "root";
@@ -29,13 +32,16 @@ if (!isset($_SESSION["logged"])) {
       die("Connection failed: " . $conn->connect_error);
     }
     ?>
-<form action="add_movie_process.php" method="post" enctype="multipart/form-data">
+    <div class="form">
+    <form action="add_movie_process.php" method="post" enctype="multipart/form-data0 ">
           <label for="movie_name">Movie name</label>
-          <input type="movie_name" id="email" name="movie_name">
+          <input type="movie_name" id="email" name="movie_name" class="form-control md3+" placeholder="Username" aria-label="Movie name"><br>
           <label for="link">link</label>
-          <textarea id="password" name="link" rows="7" columns="50"></textarea>
-          <input type="submit" id="submit" value="Submit">
+          <textarea id="password" class="md-textarea form-control" rows="7" column= "50"></textarea>
+          <input type="submit" id="submit" value="Submit" class="btn btn-success">
         </form>
+    </div>
+
     <?php
 
     $sql = "SELECT movie_name, link FROM movies_list";
@@ -53,4 +59,11 @@ $conn->close();
     
     ?>
 </body>
+
+<style>
+  .sex {
+    padding-top:10px;
+  }
+</style>
+
 </html>
