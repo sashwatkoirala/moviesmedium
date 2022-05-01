@@ -79,15 +79,7 @@ if ($result->num_rows > 0) {
 				<img src="<?php echo $row["move_thumbnail"]; ?>" alt="movie" />
 			</div>
 			
-			<div class="rating">
-				<p>RATING</p>
-				<div class="stars">
-					<div class="stars-in">
-						
-					</div>
-				</div>
-				<span class="comments">12</span>
-			</div>
+			
 		</div>
 	</a>
 
