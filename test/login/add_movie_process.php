@@ -11,9 +11,11 @@
     }
 $movie_name=mysqli_real_escape_string($conn,$_POST['movie_name']);
 $link=mysqli_real_escape_string($conn,$_POST['link']);
+$thumbnail=mysqli_real_escape_string($conn,$_POST['thumbnail']);
 
-    $sql = 'INSERT INTO movies_list(movie_name, link, total_views)
-VALUES ("'.$movie_name.'", "'.$link.'", 0)';
+
+    $sql = 'INSERT INTO movies_list(movie_name, link,move_thumbnail, total_views)
+VALUES ("'.$movie_name.'", "'.$link.'","'.$thumbnail.'" ,0)';
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";

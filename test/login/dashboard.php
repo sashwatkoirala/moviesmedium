@@ -33,23 +33,25 @@ require("db.php");
     <div class="form">
     <form action="add_movie_process.php" method="post" enctype="multipart/form-data0 ">
           <label for="movie_name">Movie name</label>
-          <input type="movie_name" id="email" name="movie_name" class="form-control md3+" placeholder="Username" aria-label="Movie name"><br>
+          <input type="text" id="email" name="movie_name" class="form-control md3+" placeholder="Username" aria-label="Movie name"><br>
           <label for="link">link</label>
           <textarea id="password" class="md-textarea form-control" rows="7" column= "50" name="link"></textarea>
+          <label for="thumbnail">Thumbnail link</label>
+          <input type="text" id="email" name="thumbnail" class="form-control md3+" placeholder="thumbnail_link" aria-label="thumbnail_link"><br>
           <input type="submit" id="submit" value="Submit" class="btn btn-success">
         </form>
     </div>
 
     <?php
 
-    $sql = "SELECT movie_name, link FROM movies_list";
+   $sql = "SELECT movie_name, link FROM movies_list";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
     echo "name: " . $row["movie_name"]. " <hr>" . $row["link"]."<br><br>";
-  }
+  } 
 } else {
   echo "0 results";
 }

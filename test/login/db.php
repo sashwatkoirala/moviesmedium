@@ -1,6 +1,6 @@
 <?php
 
-$env="pro";
+$env="dev";
 
 if ($env == "dev"){
     $servername = "localhost";
