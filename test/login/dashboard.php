@@ -58,12 +58,10 @@ if ($result->num_rows > 0) {
 $conn->close();
     
     ?>
+    <!--Start of Tawk.to Script-->
+
 </body>
 
-<style>
-  .sex {
-    padding-top:10px;
-  }
-</style>
+
 
 </html>

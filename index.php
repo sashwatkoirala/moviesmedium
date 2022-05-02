@@ -98,7 +98,17 @@ $conn->close();
 				<!-- end Movie -->
 			</div>
 			<!-- end Box -->
-			
+			<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/626f44d27b967b11798d5f8b/1g21a9m82';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
 			
  	</body>
 </html>
