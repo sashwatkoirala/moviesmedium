@@ -44,7 +44,7 @@ require("db.php");
 
     <?php
 
-   $sql = "SELECT movie_name,move_thumbnail link FROM movies_list";
+   $sql = "SELECT movie_name,move_thumbnail FROM movies_list";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
