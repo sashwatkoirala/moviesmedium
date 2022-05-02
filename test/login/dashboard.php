@@ -50,7 +50,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "name: " . $row["movie_name"]. " <hr>" . $row["move_thumbnail"]."<br><br>";
+    echo "name: " . $row["movie_name"]. " <hr><img src='" . $row["move_thumbnail"]."' width='100px'><br><br>";
   } 
 } else {
   echo "0 results";
