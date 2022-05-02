@@ -23,7 +23,7 @@
 <div id="shell">
 	<!-- Header -->
 	<div id="header">
-		<h1 id="logo"><a href="#">Movies Medium</a></h1>
+		<h1 id="logo"><a href="#">MOVIES MEDIUM</a></h1>
 		
 
 		<!-- Navigation -->
@@ -31,9 +31,9 @@
 			<ul>
 			    <li><a class="active" href="#">HOME</a></li>
 			    <li><a href="contact.html">CONTACT</a></li>
-			    <li><a href="index2.html">Our team</a></li>
+			    <li><a href="index2.html">TEAM</a></li>
 			    <li><a href="about.html">ABOUT</a></li>
-			    <li><a href="/test/login/log.html">Log in</a></li>
+			    <li><a href="/test/login/log.html">LOGIN</a></li>
 			</ul>
 		</div>
 		<!-- end Navigation -->

@@ -68,7 +68,7 @@ h1#logo a { float:left; width:239px; height:49px;line-height: 0;}
 .box .head { width:980px; padding-top:14px; padding-bottom:11px; }
 .box .head h2 { float:left; display:inline; }
 
-.box .movie { width:152px; float:left; padding-right:12px; }
+.box .movie { width:152px; float:left; margin: 12px; }
 .movie-image { float:left; width:152px; height:214px; position:relative; }
 .movie-image img { width:152px; height:214px; }
 .movie-image a { float: left; display: inline; width:152px; height:214px; position: relative; z-index: 2; }
@@ -95,10 +95,8 @@ h1#logo a { float:left; width:239px; height:49px;line-height: 0;}
 
 .content { padding-bottom:28px; }
 .content .date { font-size:10px; color:#fff; }
-.content img { float:left; width:68px; padding-right:8px; }
+.content img { float:left; width:68px; padding-right :8px; }
 .content p { font-size:13px; color:#fff; line-height:16px; }
 .content a { font-size:11px;  }
-
-
 
 
