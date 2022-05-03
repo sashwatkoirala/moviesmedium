@@ -29,6 +29,7 @@
 		<!-- Navigation -->
 		<div id="navigation">
 			<ul>
+			    <li><a class="" href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en">DOWNLOAD ADBLOCK</a></li>
 			    <li><a class="active" href="#">HOME</a></li>
 			    <li><a href="contact.html">CONTACT</a></li>
 			    <li><a href="index2.html">TEAM</a></li>
