@@ -7,6 +7,7 @@ session_start();
        include("dashboard.php");
    } else {
        echo "Username or password wrong";
-   }
+   
+    }
 
 ?>
