@@ -32,7 +32,7 @@
 			    <li><a class="active" href="#">HOME</a></li>
 			    <li><a href="contact.html">CONTACT</a></li>
 			    <li><a href="index2.html">TEAM</a></li>
-			    <li><a href="about.html">ABOUT</a></li>
+			    <li><a href="https://discord.gg/ufVbgXca6r" target="_blank">Discord</a></li>
 			    <li><a href="/test/login/log.html">LOGIN</a></li>
 				<li><a class="" href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en">DOWNLOAD ADBLOCK</a></li>
 			</ul>
