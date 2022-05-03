@@ -23,7 +23,7 @@
 <div id="shell">
 	<!-- Header -->
 	<div id="header">
-		<h1 id="logo"><a href="#">MOVIES MEDIUM</a></h1>
+		<h1 id="logo"><a href="index.php">MOVIES MEDIUM</a></h1> 
 		
 
 		<!-- Navigation -->
@@ -43,6 +43,10 @@
 		<div id="sub-navigation">
 			<ul>
 			    <p style="font-size: 20px; color: white; padding-top: 10px;"  > The place where money is worth less!</p>
+				<form action="index.php" method="get" enctype="multipart/form-data0 "> 
+					<input type="text" name="search" style="padding:5px">
+					<input type="submit" style= "padding:5px">
+</form>
 			</ul>
 			<div id="search">
 				
@@ -72,7 +76,12 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
- $sql = "SELECT id,movie_name, link, move_thumbnail FROM  movies_list";
+if (isset($_GET["search"])) {
+	$sql = "SELECT id,movie_name, link, move_thumbnail FROM  movies_list WHERE movie_name LIKE '%".$_GET["search"]."%'"; 
+} else {
+	$sql = "SELECT id,movie_name, link, move_thumbnail FROM  movies_list";
+}
+ 
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
