@@ -1,3 +1,6 @@
+<?php 
+die
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
 <head>
@@ -32,7 +35,6 @@
 			    <li><a class="active" href="#">HOME</a></li>
 			    <li><a href="contact.html">CONTACT</a></li>
 			    <li><a href="index2.html">TEAM</a></li>
-			    <li><a href="https://discord.gg/ufVbgXca6r" target="_blank">Discord</a></li>
 			    <li><a href="/test/login/log.html">LOGIN</a></li>
 				<li><a class="" href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en">DOWNLOAD ADBLOCK</a></li>
 			</ul>
